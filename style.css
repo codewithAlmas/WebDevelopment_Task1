@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Cormorant Garamond',serif;
+    background:#f4f1ea;
+    color:#111;
+    line-height:1.7;
+}
+
+.newspaper{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+header{
+    text-align:center;
+    border-bottom:3px solid #000;
+    padding-bottom:20px;
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+}
+
+header h1{
+    font-size:4rem;
+    letter-spacing:3px;
+}
+
+.tagline{
+    font-size:1.3rem;
+    margin-top:10px;
+}
+
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin:50px 0;
+}
+
+.hero img{
+    width:100%;
+    border:2px solid black;
+}
+
+.hero-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero-content h2{
+    font-size:3rem;
+}
+
+.hero-content p{
+    margin:20px 0;
+}
+
+button{
+    background:black;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    cursor:pointer;
+}
+
+section{
+    margin:50px 0;
+}
+
+section h2{
+    font-size:2.5rem;
+    border-bottom:2px solid black;
+    margin-bottom:20px;
+}
+
+.skill-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+}
+
+.card{
+    border:2px solid black;
+    padding:20px;
+    text-align:center;
+    background:white;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.project{
+    border-left:5px solid black;
+    padding-left:20px;
+    margin-bottom:25px;
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:12px;
+    border:1px solid black;
+    font-family:inherit;
+}
+
+footer{
+    border-top:2px solid black;
+    padding-top:20px;
+    text-align:center;
+}
+
+.social{
+    margin-bottom:10px;
+}
+
+.social a{
+    text-decoration:none;
+    color:black;
+    margin:0 10px;
+}
+
+@media(max-width:768px){
+
+.hero{
+    grid-template-columns:1fr;
+}
+
+header h1{
+    font-size:2.5rem;
+}
+
+.hero-content h2{
+    font-size:2rem;
+}
+
+}
